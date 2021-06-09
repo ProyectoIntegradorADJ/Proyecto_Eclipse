@@ -1,0 +1,10 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+
+public class VLoginEmpleado extends JFrame {
+	public VLoginEmpleado() {
+		getContentPane().setLayout(null);
+	}
+
+}

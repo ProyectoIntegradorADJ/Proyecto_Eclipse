@@ -1,0 +1,9 @@
+package dam.adjcars.db;
+
+public class AdjPersistencia {
+	private AccesoDB adb;// Clase definitiva para el acceso a BBDD
+
+	public AdjPersistencia() {
+		adb = new AccesoDB();
+	}
+}

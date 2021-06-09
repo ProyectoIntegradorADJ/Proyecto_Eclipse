@@ -1,0 +1,40 @@
+package dam.adjcars.view;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class VLoginEmpleado extends JFrame {
+	public static final String MNTM_ATRAS_VLOGIN_EMPLEADO = "Atrás";
+
+	private JMenuItem mntmAtrasVLoginEmpleado;
+
+	public VLoginEmpleado() {
+		initComponents();
+
+		crearMenu();
+	}
+
+	private void initComponents() {
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		setSize(ANCHO, ALTO);
+		Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+		Dimension ventana = new Dimension(ANCHO, ALTO);
+		setLocation((pantalla.width - ventana.width) / 2, (pantalla.height - ventana.height) / 2);
+		
+		getContentPane().setLayout(null);
+	}
+
+	private void crearMenu() {
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+
+		mntmAtrasVLoginEmpleado = new JMenuItem(MNTM_ATRAS_VLOGIN_EMPLEADO);
+		menuBar.add(mntmAtrasVLoginEmpleado);
+	}
+
+}

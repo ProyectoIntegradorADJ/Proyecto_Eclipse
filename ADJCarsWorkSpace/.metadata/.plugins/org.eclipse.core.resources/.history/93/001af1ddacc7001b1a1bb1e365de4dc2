@@ -1,0 +1,62 @@
+package dam.adjcars.view;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+import dam.adjcars.control.AdjListener;
+
+import java.awt.Font;
+import javax.swing.JButton;
+
+public class VPrincipal extends JFrame {
+	public static final int ANCHO = 600;
+	public static final int ALTO = 400;
+
+	public static final String BTN_EMPLEADO = "Empleado";
+	public static final String BTN_CLIENTE = "Cliente";
+	private JButton btnEmpleado;
+	private JButton btnCliente;
+
+	public VPrincipal() {
+		super("Inicio - ADJ Cars Automotive");
+		initComponents();
+	}
+
+	private void initComponents() {
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+		getContentPane().setLayout(null);
+
+		JLabel lblNewLabel = new JLabel("ADJ Cars Automotive");
+		lblNewLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 45));
+		lblNewLabel.setBounds(85, 62, 453, 100);
+		getContentPane().add(lblNewLabel);
+
+		btnEmpleado = new JButton(BTN_EMPLEADO);
+		btnEmpleado.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		btnEmpleado.setBounds(217, 165, 141, 23);
+		getContentPane().add(btnEmpleado);
+
+		btnCliente = new JButton(BTN_CLIENTE);
+		btnCliente.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		btnCliente.setBounds(217, 199, 141, 23);
+		getContentPane().add(btnCliente);
+
+		setSize(ANCHO, ALTO);
+		Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+		Dimension ventana = new Dimension(ANCHO, ALTO);
+		setLocation((pantalla.width - ventana.width) / 2, (pantalla.height - ventana.height) / 2);
+	}
+
+	public void hacerVisible() {
+		setVisible(true);
+	}
+
+	public void setListener(AdjListener listener) {
+		btnEmpleado.addActionListener(listener);
+		btnCliente.addActionListener(listener);
+	}
+}

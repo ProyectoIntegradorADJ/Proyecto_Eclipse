@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="org.sqlite.SQLiteConfig"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.awt.EventQueue"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.awt.Dimension"/>
+    <fullyQualifiedTypeName name="java.awt.Toolkit"/>
+    <fullyQualifiedTypeName name="dam.adjcars.view.VAltaCliente"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
+    <fullyQualifiedTypeName name="javax.swing.JMenuItem"/>
+    <fullyQualifiedTypeName name="dam.adjcars.view.VPrincipal"/>
+    <fullyQualifiedTypeName name="dam.adjcars.view.VLoginCliente"/>
+    <fullyQualifiedTypeName name="dam.adjcars.view.VCliente"/>
+    <fullyQualifiedTypeName name="dam.adjcars.view.VLoginEmpleado"/>
+    <fullyQualifiedTypeName name="dam.adjcars.view.VEmpleado"/>
+    <fullyQualifiedTypeName name="dam.adjcars.db.AdjPersistencia"/>
+    <fullyQualifiedTypeName name="dam.adjcars.control.AdjListener"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="dam.adjcars.model.Empleado"/>
+</qualifiedTypeNameHistroy>

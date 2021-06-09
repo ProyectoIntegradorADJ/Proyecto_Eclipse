@@ -1,0 +1,18 @@
+package dam.adjcars.model;
+
+public class Cliente {
+	private String passwordCliente;
+	private String nombreCliente;
+	private String email;
+	private String telefonoCliente;
+	private String fechaAlta;
+
+	public Cliente() {
+	}
+
+	public Cliente(String passwordCliente, String nombreCliente) {
+		this.passwordCliente = passwordCliente;
+		this.nombreCliente = nombreCliente;
+	}
+
+}

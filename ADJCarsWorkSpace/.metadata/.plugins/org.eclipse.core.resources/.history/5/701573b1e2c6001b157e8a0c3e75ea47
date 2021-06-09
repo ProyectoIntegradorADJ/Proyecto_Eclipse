@@ -1,0 +1,14 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+
+public class VAltaCliente extends JFrame {
+	public VAltaCliente() {
+		initComponents();
+	}
+
+	private void initComponents() {
+		getContentPane().setLayout(null);
+	}
+
+}

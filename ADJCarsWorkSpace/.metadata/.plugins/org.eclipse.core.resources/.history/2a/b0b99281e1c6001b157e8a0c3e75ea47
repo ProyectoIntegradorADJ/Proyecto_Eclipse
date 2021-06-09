@@ -1,0 +1,54 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import java.awt.BorderLayout;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+
+public class VEmpleado extends JFrame {
+	private JScrollPane scrpContenedorEmpleado;
+	private JMenuItem mntmModificarVehiculo;
+	private JMenuItem mntmRegistrarVehiculo;
+	private JMenuItem mntmSalirAreaEmpleado;
+
+	public VEmpleado() {
+
+		initComponents();
+
+		crearMenu();
+	}
+
+	private void crearMenu() {
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+
+		JMenu mnNewMenu = new JMenu("Gestión vehículos");
+		menuBar.add(mnNewMenu);
+
+		mntmRegistrarVehiculo = new JMenuItem("Registrar vehículo");
+		mnNewMenu.add(mntmRegistrarVehiculo);
+
+		mntmModificarVehiculo = new JMenuItem("Modificar vehículo");
+		mnNewMenu.add(mntmModificarVehiculo);
+
+		mntmSalirAreaEmpleado = new JMenuItem("Salir");
+		menuBar.add(mntmSalirAreaEmpleado);
+	}
+
+	private void initComponents() {
+		scrpContenedorEmpleado = new JScrollPane();
+		getContentPane().add(scrpContenedorEmpleado, BorderLayout.CENTER);
+	}
+
+	public void hacerVisible() {
+		setVisible(true);
+	}
+
+	public void cargarPanel(JPanel panel) {
+		scrpContenedorEmpleado.setViewportView(panel);
+	}
+
+}

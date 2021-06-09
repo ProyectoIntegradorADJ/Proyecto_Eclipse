@@ -1,0 +1,21 @@
+package dam.adjcars.view;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import java.awt.Font;
+
+public class PRegistrarVehiculo extends JPanel {
+	public PRegistrarVehiculo() {
+		initComponents();
+	}
+
+	private void initComponents() {
+		setSize(VEmpleado.ANCHO_VENTANA_PANELES - 30, VEmpleado.ALTO_VENTANA_PANELES - 70);
+		setLayout(null);
+		
+		JLabel lblRegistroNuevoVehiculo = new JLabel("Registrar nuevo vehículo");
+		lblRegistroNuevoVehiculo.setFont(new Font("Segoe UI", Font.PLAIN, 30));
+		lblRegistroNuevoVehiculo.setBounds(47, 23, 344, 65);
+		add(lblRegistroNuevoVehiculo);
+	}
+}

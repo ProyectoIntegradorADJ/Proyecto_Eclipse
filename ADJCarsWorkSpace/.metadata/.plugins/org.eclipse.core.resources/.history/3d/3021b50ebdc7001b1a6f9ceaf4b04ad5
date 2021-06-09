@@ -1,0 +1,7 @@
+package dam.adjcars.view;
+
+import javax.swing.JPanel;
+
+public class PConsultarVehiculoVEmple extends JPanel {
+
+}

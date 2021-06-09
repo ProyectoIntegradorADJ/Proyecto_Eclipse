@@ -1,0 +1,19 @@
+package dam.adjcars.db;
+
+import dam.adjcars.model.Empleado;
+
+public class AdjPersistencia {
+	private AccesoDB adb;
+
+	public AdjPersistencia() {
+		adb = new AccesoDB();
+	}
+
+	public Empleado comprobarCrendecialesEmpleado(String nombreEmpleado, String contrasenaEmpleado) {
+		Empleado empleado = null;
+		
+		String query = "SELECT NOMBRE, PSWD_EMPLE FROM CONC_EMPLE WHERE NOMBRE = ? AND PSWD_EMPLE = ?";
+		
+		return empleado;
+	}
+}

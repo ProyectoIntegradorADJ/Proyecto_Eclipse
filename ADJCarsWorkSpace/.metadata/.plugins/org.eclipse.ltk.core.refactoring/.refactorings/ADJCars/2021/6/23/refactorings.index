@@ -1,0 +1,12 @@
+1623085164090	Delete element
+1623086666491	Rename local variable 'nombreEmpleado'
+1623086673002	Rename local variable 'nombrecliente'
+1623086681025	Rename local variable 'contrasenaEmpleado'
+1623086688270	Rename method 'getNombreEmpleado'
+1623086829359	Rename method 'getNombreCliente'
+1623086867123	Rename local variable 'nombreEmpleado'
+1623086935337	Rename local variable 'contrasenaEmpleado'
+1623087098221	Rename local variable 'nombreEmple'
+1623087107744	Rename local variable 'contrasenaEmple'
+1623087690685	Extract method 'initComponents'
+1623090043642	Extract method 'initComponents'

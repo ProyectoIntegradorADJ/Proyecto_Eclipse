@@ -1,0 +1,37 @@
+package dam.adjcars.model;
+
+public class Empleado {
+	private String passwordEmpleado;
+	private String nombre;
+	private String direccion;
+	private String telefono;
+	private String cargo;
+
+	public Empleado() {
+	}
+
+	
+
+	public String getPasswordCliente() {
+		return passwordEmpleado;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public String getCargo() {
+		return cargo;
+	}
+
+
+
+}

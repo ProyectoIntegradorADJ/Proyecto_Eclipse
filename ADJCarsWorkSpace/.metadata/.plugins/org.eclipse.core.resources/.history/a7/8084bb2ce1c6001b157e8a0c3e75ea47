@@ -1,0 +1,31 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import java.awt.BorderLayout;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+
+public class VEmpleado extends JFrame {
+	private JScrollPane scrpContenedorEmpleado;
+	private JMenuItem mntmModificarVehiculo;
+	public VEmpleado() {
+		
+		scrpContenedorEmpleado = new JScrollPane();
+		getContentPane().add(scrpContenedorEmpleado, BorderLayout.CENTER);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		JMenu mnNewMenu = new JMenu("New menu");
+		menuBar.add(mnNewMenu);
+		
+		JMenuItem mntmNewMenuItem = new JMenuItem("New menu item");
+		mnNewMenu.add(mntmNewMenuItem);
+		
+		mntmModificarVehiculo = new JMenuItem("Modificar vehículo");
+		mnNewMenu.add(mntmModificarVehiculo);
+	}
+
+}

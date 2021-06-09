@@ -1,0 +1,78 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+
+import dam.adjcars.control.AdjListener;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+
+public class VEmpleado extends JFrame {
+	public static final String MNTM_REGISTRAR_VEHICULO = "Registrar vehículo";
+	public static final String MNTM_MODIFICAR_VEHICULO = "Modificar vehículo";
+	public static final String MNTM_SALIR_AREA_EMPLEADO = "Salir";
+
+	private JScrollPane scrpContenedorEmpleado;
+	private JMenuItem mntmModificarVehiculo;
+	private JMenuItem mntmRegistrarVehiculo;
+	private JMenuItem mntmSalirAreaEmpleado;
+
+	public VEmpleado() {
+
+		initComponents();
+
+		crearMenu();
+	}
+
+	private void crearMenu() {
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+
+		JMenu mnNewMenu = new JMenu("Gestión vehículos");
+		menuBar.add(mnNewMenu);
+
+		mntmRegistrarVehiculo = new JMenuItem(MNTM_REGISTRAR_VEHICULO);
+		mnNewMenu.add(mntmRegistrarVehiculo);
+
+		mntmModificarVehiculo = new JMenuItem(MNTM_MODIFICAR_VEHICULO);
+		mnNewMenu.add(mntmModificarVehiculo);
+
+		mntmSalirAreaEmpleado = new JMenuItem(MNTM_SALIR_AREA_EMPLEADO);
+		menuBar.add(mntmSalirAreaEmpleado);
+	}
+
+	private void initComponents() {
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+		setSize(VPrincipal.ANCHO + 200, VPrincipal.ALTO + 200);
+		Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+		Dimension ventana = new Dimension(VPrincipal.ANCHO + 200, VPrincipal.ALTO + 200);
+		setLocation((pantalla.width - ventana.width) / 2, (pantalla.height - ventana.height) / 2);
+
+		scrpContenedorEmpleado = new JScrollPane();
+		getContentPane().add(scrpContenedorEmpleado, BorderLayout.CENTER);
+	}
+
+	public void hacerVisible() {
+		setVisible(true);
+	}
+
+	public void cargarPanel(JPanel panel) {
+		scrpContenedorEmpleado.setViewportView(panel);
+	}
+
+	public void setListener(AdjListener listener) {
+		mntmRegistrarVehiculo.addActionListener(listener);
+		mntmModificarVehiculo.addActionListener(listener);
+		mntmSalirAreaEmpleado.addActionListener(listener);
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+
+public class VPrincipal extends JFrame {
+	public VPrincipal() {
+		getContentPane().setLayout(null);
+	}
+
+}

@@ -1,0 +1,10 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+
+public class VLoginCliente extends JFrame {
+	public VLoginCliente() {
+		getContentPane().setLayout(null);
+	}
+
+}

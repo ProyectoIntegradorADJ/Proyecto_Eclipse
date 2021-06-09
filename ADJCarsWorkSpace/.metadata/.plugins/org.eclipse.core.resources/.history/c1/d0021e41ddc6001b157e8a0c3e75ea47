@@ -1,0 +1,23 @@
+package dam.ajdcars.main;
+
+import java.awt.EventQueue;
+
+import dam.adjcars.view.VPrincipal;
+
+public class InicioAdjCars {
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+
+			@Override
+			public void run() {
+				VPrincipal vp = new VPrincipal();
+				
+				AdjListener listener = new AdjListener(vp);
+
+			}
+		});
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+
+public class VPrincipal extends JFrame {
+	public static final String ANCHO = 800;
+	public static final String ALTO = 600;
+	public VPrincipal() {
+		super("Inicio - ADJ Cars Automotive");
+		initComponents();
+	}
+
+	private void initComponents() {
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		getContentPane().setLayout(null);
+		
+		setSize(ANCHO, ALTO);
+	}
+
+}

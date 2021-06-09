@@ -1,0 +1,15 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import java.awt.BorderLayout;
+
+public class VCliente extends JFrame {
+	private JScrollPane scrpContenedorCliente;
+	public VCliente() {
+		
+		scrpContenedorCliente = new JScrollPane();
+		getContentPane().add(scrpContenedorCliente, BorderLayout.CENTER);
+	}
+
+}

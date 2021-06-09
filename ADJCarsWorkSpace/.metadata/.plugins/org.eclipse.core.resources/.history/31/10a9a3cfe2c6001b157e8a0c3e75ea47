@@ -1,0 +1,23 @@
+package dam.adjcars.view;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+
+public class VAltaCliente extends JFrame {
+	public VAltaCliente() {
+		initComponents();
+	}
+
+	private void initComponents() {
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		setSize(VPrincipal.ANCHO + 200, VPrincipal.ALTO + 200);
+		Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+		Dimension ventana = new Dimension(VPrincipal.ANCHO + 200, VPrincipal.ALTO + 200);
+		setLocation((pantalla.width - ventana.width) / 2, (pantalla.height - ventana.height) / 2);
+		getContentPane().setLayout(null);
+	}
+
+}

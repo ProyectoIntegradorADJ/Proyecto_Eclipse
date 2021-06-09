@@ -1,0 +1,10 @@
+package dam.adjcars.model;
+
+public class Cliente {
+	private String passwordCliente;
+	private String nombre;
+	private String direccion;
+	private String telefono;
+	private String cargo;
+	
+}

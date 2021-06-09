@@ -1,0 +1,50 @@
+package dam.adjcars.view;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JButton;
+
+public class VPrincipal extends JFrame {
+	public static final int ANCHO = 600;
+	public static final int ALTO = 400;
+	private JButton btnEmpleado;
+
+	public VPrincipal() {
+		super("Inicio - ADJ Cars Automotive");
+		initComponents();
+	}
+
+	private void initComponents() {
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+		getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("ADJ Cars Automotive");
+		lblNewLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 45));
+		lblNewLabel.setBounds(82, 52, 453, 100);
+		getContentPane().add(lblNewLabel);
+		
+		btnEmpleado = new JButton("Empleado");
+		btnEmpleado.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		btnEmpleado.setBounds(133, 152, 141, 23);
+		getContentPane().add(btnEmpleado);
+		
+		JButton btnCliente = new JButton("Cliente");
+		btnCliente.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		btnCliente.setBounds(310, 152, 141, 23);
+		getContentPane().add(btnCliente);
+
+		setSize(ANCHO, ALTO);
+		Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+		Dimension ventana = new Dimension(ANCHO, ALTO);
+		setLocation((pantalla.width - ventana.width) / 2, (pantalla.height - ventana.height) / 2);
+	}
+	
+	public void hacerVisible() {
+		setVisible(true);
+	}
+}

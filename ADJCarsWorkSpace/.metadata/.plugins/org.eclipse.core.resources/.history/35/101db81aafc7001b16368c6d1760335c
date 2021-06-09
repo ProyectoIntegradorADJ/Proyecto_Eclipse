@@ -1,0 +1,9 @@
+package dam.adjcars.db;
+
+public class AdjPersistencia {
+	private AccesoDB adb;
+
+	public AdjPersistencia() {
+		adb = new AccesoDB();
+	}
+}

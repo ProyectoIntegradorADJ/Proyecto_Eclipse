@@ -1,0 +1,101 @@
+package dam.adjcars.view;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JComboBox;
+import javax.swing.JSpinner;
+import javax.swing.SpinnerNumberModel;
+
+public class PRegistrarVehiculo extends JPanel {
+	private JTextField txtMarcaVehiculoReg;
+	private JTextField txtModeloVehiculoReg;
+	private JComboBox cmbTiposVehiculosReg;
+	private JComboBox cmbTipoMotorVehiculoReg;
+	private JTextField txtColorVehiculoReg;
+	private JTextField textField;
+	public PRegistrarVehiculo() {
+		initComponents();
+	}
+
+	private void initComponents() {
+		setSize(VEmpleado.ANCHO_VENTANA_PANELES - 30, VEmpleado.ALTO_VENTANA_PANELES - 70);
+		setLayout(null);
+		
+		JLabel lblRegistroNuevoVehiculo = new JLabel("Registrar nuevo vehículo");
+		lblRegistroNuevoVehiculo.setFont(new Font("Segoe UI", Font.PLAIN, 30));
+		lblRegistroNuevoVehiculo.setBounds(47, 23, 344, 65);
+		add(lblRegistroNuevoVehiculo);
+		
+		JLabel lblMarcaVehiculoReg = new JLabel("Marca");
+		lblMarcaVehiculoReg.setBounds(60, 114, 46, 14);
+		add(lblMarcaVehiculoReg);
+		
+		JLabel lblModeloVehiculoReg = new JLabel("Modelo");
+		lblModeloVehiculoReg.setBounds(60, 139, 46, 14);
+		add(lblModeloVehiculoReg);
+		
+		JLabel lblTipoVehiculoReg = new JLabel("Tipo de vehículo");
+		lblTipoVehiculoReg.setBounds(60, 180, 97, 14);
+		add(lblTipoVehiculoReg);
+		
+		JLabel lblColorVehiculoReg = new JLabel("Color");
+		lblColorVehiculoReg.setBounds(60, 289, 46, 14);
+		add(lblColorVehiculoReg);
+		
+		JLabel lblMatriculaVehiculoReg = new JLabel("Matrícula");
+		lblMatriculaVehiculoReg.setBounds(60, 329, 46, 14);
+		add(lblMatriculaVehiculoReg);
+		
+		JLabel lblPotenciaVehiculoReg = new JLabel("Potencia");
+		lblPotenciaVehiculoReg.setBounds(60, 254, 46, 14);
+		add(lblPotenciaVehiculoReg);
+		
+		JLabel lblTipoMotorVehiculoReg = new JLabel("Tipo de motor");
+		lblTipoMotorVehiculoReg.setBounds(60, 222, 76, 14);
+		add(lblTipoMotorVehiculoReg);
+		
+		JLabel lblNumBastidorVehiculoReg = new JLabel("Num. bastidor");
+		lblNumBastidorVehiculoReg.setBounds(60, 354, 138, 14);
+		add(lblNumBastidorVehiculoReg);
+		
+		JLabel lblFechaFabVehiculoReg = new JLabel("Fecha de fabricación");
+		lblFechaFabVehiculoReg.setBounds(60, 379, 138, 14);
+		add(lblFechaFabVehiculoReg);
+		
+		txtMarcaVehiculoReg = new JTextField();
+		txtMarcaVehiculoReg.setBounds(102, 111, 96, 20);
+		add(txtMarcaVehiculoReg);
+		txtMarcaVehiculoReg.setColumns(10);
+		
+		txtModeloVehiculoReg = new JTextField();
+		txtModeloVehiculoReg.setBounds(102, 139, 96, 20);
+		add(txtModeloVehiculoReg);
+		txtModeloVehiculoReg.setColumns(10);
+		
+		cmbTiposVehiculosReg = new JComboBox();
+		cmbTiposVehiculosReg.setBounds(149, 176, 138, 22);
+		add(cmbTiposVehiculosReg);
+		
+		cmbTipoMotorVehiculoReg = new JComboBox();
+		cmbTipoMotorVehiculoReg.setBounds(148, 218, 139, 22);
+		add(cmbTipoMotorVehiculoReg);
+		
+		JSpinner spinner = new JSpinner();
+		spinner.setModel(new SpinnerNumberModel(65, 0, 720, 1));
+		spinner.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		spinner.setBounds(127, 251, 71, 20);
+		add(spinner);
+		
+		txtColorVehiculoReg = new JTextField();
+		txtColorVehiculoReg.setBounds(102, 286, 130, 20);
+		add(txtColorVehiculoReg);
+		txtColorVehiculoReg.setColumns(10);
+		
+		textField = new JTextField();
+		textField.setBounds(112, 326, 120, 20);
+		add(textField);
+		textField.setColumns(10);
+	}
+}

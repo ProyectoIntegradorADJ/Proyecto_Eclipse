@@ -1,0 +1,25 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+
+public class VPrincipal extends JFrame {
+	public static final int ANCHO = 800;
+	public static final int ALTO = 600;
+	
+	public VPrincipal() {
+		super("Inicio - ADJ Cars Automotive");
+		initComponents();
+	}
+
+	private void initComponents() {
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		getContentPane().setLayout(null);
+		
+		setSize(ANCHO, ALTO);
+		Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+		Dimension ventana = new Dimension(ANCHO, ALTO); 
+		setLocation((pantalla.width - ventana.width) / 2, (pantalla.height - ventana.height) / 2);
+	}
+
+}

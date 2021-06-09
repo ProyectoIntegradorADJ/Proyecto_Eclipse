@@ -1,0 +1,78 @@
+package dam.adjcars.view;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+
+public class PConsultarVehiculoVEmple extends JPanel {
+	private JTextField txtMatriculaPConsultaEmple;
+	private JScrollPane scrpListaVehiculosEmpleado;
+	private JTable tblVehiculosConsultaEmpleado;
+	private DefaultTableModel tblModel;
+	
+	public PConsultarVehiculoVEmple() {
+		initComponents();
+	}
+
+	private void initComponents() {
+		setSize(VEmpleado.ANCHO_VENTANA_PANELES - 30, VEmpleado.ALTO_VENTANA_PANELES - 70);
+		setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Consultar vehículo");
+		lblNewLabel.setFont(new Font("Segoe UI", Font.PLAIN, 30));
+		lblNewLabel.setBounds(47, 23, 344, 65);
+		add(lblNewLabel);
+		
+		txtMatriculaPConsultaEmple = new JTextField();
+		txtMatriculaPConsultaEmple.setBounds(105, 99, 185, 20);
+		add(txtMatriculaPConsultaEmple);
+		txtMatriculaPConsultaEmple.setColumns(10);
+		
+		JLabel lblNewLabel_1 = new JLabel("Matrícula");
+		lblNewLabel_1.setBounds(47, 102, 61, 14);
+		add(lblNewLabel_1);
+		
+		scrpListaVehiculosEmpleado = new JScrollPane();
+		scrpListaVehiculosEmpleado.setBounds(47, 137, 573, 235);
+		add(scrpListaVehiculosEmpleado);
+		
+		tblVehiculosConsultaEmpleado = new JTable();
+		scrpListaVehiculosEmpleado.setViewportView(tblVehiculosConsultaEmpleado);
+		
+		configurarTabla();
+	}
+
+	private void configurarTabla() {
+		tblModel = new DefaultTableModel() {
+			
+			@Override
+			public boolean isCellEditable(int row, int column) {
+				return false;
+			}
+		};
+		
+		tblModel.addColumn(CLM_ID_VEHICULO);
+		tblModel.addColumn(CLM_MATRICULA_VEHICULO);
+		tblModel.addColumn(CLM_NUM_BAST_VEHICULO);
+		tblModel.addColumn(CLM_MARCA_VEHICULO);
+		tblModel.addColumn(CLM_MODELO_VEHICULO);
+		tblModel.addColumn(CLM_MODELO_TIPO_MOTOR_VEHICULO);
+		tblModel.addColumn(CLM_MODELO_FECHA_FAB_VEHICULO);
+		tblModel.addColumn(CLM_MODELO_TIPO_VEHICULO);
+		tblModel.addColumn(CLM_MODELO_COLOR_VEHICULO);
+		tblModel.addColumn(CLM_MODELO_POTENCIA_VEHICULO);
+		
+		tblRestaurantes.setModel(tblModel);
+		
+		tblRestaurantes.getColumn(CLM_NOMBRE).setPreferredWidth(100);
+		tblRestaurantes.getColumn(CLM_CIUDAD).setPreferredWidth(150);
+		tblRestaurantes.getColumn(CLM_DISTINCION).setPreferredWidth(100);
+		tblRestaurantes.getColumn(CLM_COCINA).setPreferredWidth(100);
+		tblRestaurantes.getColumn(CLM_PRECIO).setPreferredWidth(100);
+	
+	}
+}

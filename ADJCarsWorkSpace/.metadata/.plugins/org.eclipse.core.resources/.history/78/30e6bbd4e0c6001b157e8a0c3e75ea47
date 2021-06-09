@@ -1,0 +1,78 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JLabel;
+
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Toolkit;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+import javax.swing.JButton;
+
+public class VLoginCliente extends JFrame {
+	private JMenuItem mntmAtrasVLoginCliente;
+	private JTextField txtUsuarioCliente;
+	private JPasswordField pswdCliente;
+	private JButton btnEntrarAreaCliente;
+	private JButton btnAltaCliente;
+	public VLoginCliente() {
+		initComponents();
+		
+		crearMenu();
+	}
+	private void initComponents() {
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		getContentPane().setLayout(null);
+		
+		setSize(VPrincipal.ANCHO, VPrincipal.ALTO);
+		Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+		Dimension ventana = new Dimension(VPrincipal.ANCHO, VPrincipal.ALTO);
+		setLocation((pantalla.width - ventana.width) / 2, (pantalla.height - ventana.height) / 2);
+		
+		JLabel lblAreaCliente = new JLabel("Área Cliente");
+		lblAreaCliente.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 30));
+		lblAreaCliente.setBounds(200, 50, 239, 46);
+		getContentPane().add(lblAreaCliente);
+		
+		JLabel lblUsuarioCliente = new JLabel("Usuario");
+		lblUsuarioCliente.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+		lblUsuarioCliente.setBounds(165, 107, 53, 14);
+		getContentPane().add(lblUsuarioCliente);
+		
+		JLabel lblPswdCliente = new JLabel("Contraseña");
+		lblPswdCliente.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+		lblPswdCliente.setBounds(165, 139, 66, 14);
+		getContentPane().add(lblPswdCliente);
+		
+		txtUsuarioCliente = new JTextField();
+		txtUsuarioCliente.setBounds(239, 105, 139, 20);
+		getContentPane().add(txtUsuarioCliente);
+		txtUsuarioCliente.setColumns(10);
+		
+		pswdCliente = new JPasswordField();
+		pswdCliente.setBounds(241, 137, 137, 20);
+		getContentPane().add(pswdCliente);
+		
+		btnEntrarAreaCliente = new JButton("Entrar");
+		btnEntrarAreaCliente.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		btnEntrarAreaCliente.setBounds(238, 177, 87, 23);
+		getContentPane().add(btnEntrarAreaCliente);
+		
+		btnAltaCliente = new JButton("Alta nuevo cliente");
+		btnAltaCliente.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		btnAltaCliente.setBounds(200, 211, 161, 23);
+		getContentPane().add(btnAltaCliente);
+	}
+	private void crearMenu() {
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		mntmAtrasVLoginCliente = new JMenuItem("Atrás");
+		menuBar.add(mntmAtrasVLoginCliente);
+	}
+
+}

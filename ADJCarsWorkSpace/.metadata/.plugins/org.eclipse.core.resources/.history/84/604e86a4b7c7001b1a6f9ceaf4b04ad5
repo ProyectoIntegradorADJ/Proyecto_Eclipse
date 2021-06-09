@@ -1,0 +1,14 @@
+package dam.adjcars.view;
+
+import javax.swing.JPanel;
+
+public class PRegistrarVehiculo extends JPanel {
+	public PRegistrarVehiculo() {
+		initComponents();
+	}
+
+	private void initComponents() {
+		setLayout(null);
+	}
+
+}

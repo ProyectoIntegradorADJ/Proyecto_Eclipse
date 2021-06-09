@@ -1,0 +1,25 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class VLoginEmpleado extends JFrame {
+	private JMenuItem mntmAtrasVLoginEmpleado;
+	public VLoginEmpleado() {
+		initComponents();
+		
+		crearMenu();
+	}
+	private void initComponents() {
+		getContentPane().setLayout(null);
+	}
+	private void crearMenu() {
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		mntmAtrasVLoginEmpleado = new JMenuItem("Atrás");
+		menuBar.add(mntmAtrasVLoginEmpleado);
+	}
+
+}

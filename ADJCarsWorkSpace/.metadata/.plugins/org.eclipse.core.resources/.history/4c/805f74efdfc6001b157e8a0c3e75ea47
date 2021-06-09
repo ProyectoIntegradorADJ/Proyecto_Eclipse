@@ -1,0 +1,19 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class VLoginCliente extends JFrame {
+	private JMenuItem mntmAtrasVLoginCliente;
+	public VLoginCliente() {
+		getContentPane().setLayout(null);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		mntmAtrasVLoginCliente = new JMenuItem("Atrás");
+		menuBar.add(mntmAtrasVLoginCliente);
+	}
+
+}

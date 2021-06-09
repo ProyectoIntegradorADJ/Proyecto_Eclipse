@@ -1,0 +1,76 @@
+package dam.adjcars.view;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import java.awt.Label;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+import javax.swing.JButton;
+
+public class VLoginEmpleado extends JFrame {
+	public static final String MNTM_ATRAS_VLOGIN_EMPLEADO = "Atrás";
+
+	private JMenuItem mntmAtrasVLoginEmpleado;
+	private JTextField txtUsuarioEmpleado;
+	private JPasswordField pswdEmpleado;
+	private JButton btnEntrarAreaEmpleado;
+
+	public VLoginEmpleado() {
+		initComponents();
+
+		crearMenu();
+	}
+
+	private void initComponents() {
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+		setSize(VPrincipal.ANCHO, VPrincipal.ALTO);
+		Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+		Dimension ventana = new Dimension(VPrincipal.ANCHO, VPrincipal.ALTO);
+		setLocation((pantalla.width - ventana.width) / 2, (pantalla.height - ventana.height) / 2);
+
+		getContentPane().setLayout(null);
+		
+		Label lblAreaEmpleado = new Label("Área Empleado");
+		lblAreaEmpleado.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 30));
+		lblAreaEmpleado.setBounds(168, 63, 277, 50);
+		getContentPane().add(lblAreaEmpleado);
+		
+		Label lblUsuarioEmpleado = new Label("Usuario");
+		lblUsuarioEmpleado.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+		lblUsuarioEmpleado.setBounds(155, 129, 60, 21);
+		getContentPane().add(lblUsuarioEmpleado);
+		
+		txtUsuarioEmpleado = new JTextField();
+		txtUsuarioEmpleado.setBounds(247, 130, 160, 20);
+		getContentPane().add(txtUsuarioEmpleado);
+		txtUsuarioEmpleado.setColumns(10);
+		
+		Label label = new Label("Contraseña");
+		label.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+		label.setBounds(155, 174, 90, 21);
+		getContentPane().add(label);
+		
+		pswdEmpleado = new JPasswordField();
+		pswdEmpleado.setBounds(247, 175, 160, 20);
+		getContentPane().add(pswdEmpleado);
+		
+		btnEntrarAreaEmpleado = new JButton("Entrar");
+		btnEntrarAreaEmpleado.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		btnEntrarAreaEmpleado.setBounds(238, 206, 87, 23);
+		getContentPane().add(btnEntrarAreaEmpleado);
+	}
+
+	private void crearMenu() {
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+
+		mntmAtrasVLoginEmpleado = new JMenuItem(MNTM_ATRAS_VLOGIN_EMPLEADO);
+		menuBar.add(mntmAtrasVLoginEmpleado);
+	}
+}

@@ -1,0 +1,42 @@
+package dam.adjcars.view;
+
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import java.awt.BorderLayout;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+
+public class VCliente extends JFrame {
+	private JScrollPane scrpContenedorCliente;
+	private JMenuItem mntmSalirAreaCliente;
+	private JMenuItem mntmConsultarVehiculo;
+	private JMenuItem mntmModificarInformacion;
+	public VCliente() {
+		
+		initComponents();
+		
+		crearMenu();
+	}
+	private void crearMenu() {
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		JMenu mnNewMenu = new JMenu("Consultar");
+		menuBar.add(mnNewMenu);
+		
+		mntmConsultarVehiculo = new JMenuItem("Consultar vehículo");
+		mnNewMenu.add(mntmConsultarVehiculo);
+		
+		mntmModificarInformacion = new JMenuItem("Modificar información personal");
+		mnNewMenu.add(mntmModificarInformacion);
+		
+		mntmSalirAreaCliente = new JMenuItem("Salir");
+		menuBar.add(mntmSalirAreaCliente);
+	}
+	private void initComponents() {
+		scrpContenedorCliente = new JScrollPane();
+		getContentPane().add(scrpContenedorCliente, BorderLayout.CENTER);
+	}
+
+}
