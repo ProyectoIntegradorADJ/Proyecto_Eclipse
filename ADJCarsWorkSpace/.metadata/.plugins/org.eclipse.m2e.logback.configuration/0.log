@@ -2151,3 +2151,4 @@
 2021-06-09 11:30:34,465 [Worker-5: Launching InicioAdjCars] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ADJCarsWorkSpace\ADJCars\src\main\resources
 2021-06-09 11:30:34,477 [Worker-5: Launching InicioAdjCars] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-06-09 11:30:34,478 [Worker-5: Launching InicioAdjCars] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-09 11:50:59,363 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
