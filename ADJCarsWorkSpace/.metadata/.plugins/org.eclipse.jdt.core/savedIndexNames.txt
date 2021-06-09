@@ -1,6 +1,3 @@
 INDEX VERSION 1.131+C:\Users\josea\Desktop\Proyecto_Eclipse\ADJCarsWorkSpace\.metadata\.plugins\org.eclipse.jdt.core
 401351305.index
-1614328827.index
-2973176631.index
-3511633183.index
-4271878145.index
+3920946221.index

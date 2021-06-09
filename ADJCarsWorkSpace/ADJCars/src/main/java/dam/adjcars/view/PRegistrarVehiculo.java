@@ -2,18 +2,35 @@ package dam.adjcars.view;
 
 import javax.swing.JPanel;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
+
+import com.dam.maven.GuiaMichelin.control.GMListener;
+import com.dam.maven.GuiaMichelin.model.Restaurante;
+
+import dam.adjcars.control.AdjListener;
+import dam.adjcars.model.Vehiculo;
+
 import javax.swing.JButton;
 
 public class PRegistrarVehiculo extends JPanel {
+	private static final long serialVersionUID = 1L;
+	
+	//Constantes
+	public static final String BTN_GUARDAR_REG = "Guardar datos";
+	public static final String BTN_CANCELAR_REG = "Cancelar";
+	public static final String BTN_LIMPIAR_REG = "Limpiar Datos";
+	
+	//Variables
 	private JTextField txtMarcaVehiculoReg;
 	private JTextField txtModeloVehiculoReg;
-	private JComboBox cmbTiposVehiculosReg;
-	private JComboBox cmbTipoMotorVehiculoReg;
+	private JComboBox<String> cmbTiposVehiculosReg;
+	private JComboBox<String> cmbTipoMotorVehiculoReg;
 	private JTextField txtColorVehiculoReg;
 	private JTextField txtMatriculaVehiculoReg;
 	private JTextField txtNumBastidorVehiculoReg;
@@ -21,6 +38,7 @@ public class PRegistrarVehiculo extends JPanel {
 	private JSpinner spinner;
 	private JButton btncancelarReg;
 	private JButton btnLimpiarDatosReg;
+	private JButton btnGuardarVehiculoReg;
 	public PRegistrarVehiculo() {
 		initComponents();
 	}
@@ -80,11 +98,11 @@ public class PRegistrarVehiculo extends JPanel {
 		add(txtModeloVehiculoReg);
 		txtModeloVehiculoReg.setColumns(10);
 		
-		cmbTiposVehiculosReg = new JComboBox();
+		cmbTiposVehiculosReg = new JComboBox<String>();
 		cmbTiposVehiculosReg.setBounds(147, 129, 138, 22);
 		add(cmbTiposVehiculosReg);
 		
-		cmbTipoMotorVehiculoReg = new JComboBox();
+		cmbTipoMotorVehiculoReg = new JComboBox<String>();
 		cmbTipoMotorVehiculoReg.setBounds(381, 129, 139, 22);
 		add(cmbTipoMotorVehiculoReg);
 		
@@ -114,16 +132,56 @@ public class PRegistrarVehiculo extends JPanel {
 		add(txtFechaFabVehiculoReg);
 		txtFechaFabVehiculoReg.setColumns(10);
 		
-		JButton btnGuardarVehiculoReg = new JButton("Guardar datos");
+		btnGuardarVehiculoReg = new JButton(BTN_GUARDAR_REG);
 		btnGuardarVehiculoReg.setBounds(57, 259, 130, 23);
 		add(btnGuardarVehiculoReg);
 		
-		btncancelarReg = new JButton("Cancelar");
+		btncancelarReg = new JButton(BTN_CANCELAR_REG);
 		btncancelarReg.setBounds(497, 373, 130, 23);
 		add(btncancelarReg);
 		
-		btnLimpiarDatosReg = new JButton("Limpiar datos");
+		btnLimpiarDatosReg = new JButton(BTN_LIMPIAR_REG);
 		btnLimpiarDatosReg.setBounds(448, 259, 130, 23);
 		add(btnLimpiarDatosReg);
 	}
+
+	public void setVisibleBtnLimpiar(boolean b) {
+		btnLimpiarDatosReg.setVisible(b);
+	}
+	
+	public void setListener(AdjListener listener) {
+		btnGuardarVehiculoReg.addActionListener(listener);
+		btnLimpiarDatosReg.addActionListener(listener);	
+		btncancelarReg.addActionListener(listener);
+	}
+	
+	public Vehiculo getDatos() {
+		Vehiculo vehIn = null;
+		
+		String marca = txtMarcaVehiculoReg.getText().trim();
+		
+		if (marca.isEmpty()) {
+			mostrarMsjError("Debe introducir la marca");
+		} else {
+			String modelo = txtModeloVehiculoReg.getText().trim();
+			
+			int potencia = 
+		}
+		
+		return vehIn;
+	}
+
+	public void mostrarMsjError(String msj) {
+		JOptionPane.showMessageDialog(this, msj, "Error", JOptionPane.ERROR_MESSAGE);		
+		
+	}
+
+	public void mostrarMsjInfo(String msj) {
+		JOptionPane.showMessageDialog(this, msj, "Información de operación", JOptionPane.INFORMATION_MESSAGE);
+		
+	}
+
+
+
+
 }

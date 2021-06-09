@@ -21,11 +21,12 @@
     <fullyQualifiedTypeName name="dam.adjcars.view.VLoginEmpleado"/>
     <fullyQualifiedTypeName name="dam.adjcars.view.VEmpleado"/>
     <fullyQualifiedTypeName name="dam.adjcars.db.AdjPersistencia"/>
-    <fullyQualifiedTypeName name="dam.adjcars.control.AdjListener"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="dam.adjcars.model.Empleado"/>
+    <fullyQualifiedTypeName name="dam.adjcars.control.AdjListener"/>
+    <fullyQualifiedTypeName name="dam.adjcars.model.Vehiculo"/>
 </qualifiedTypeNameHistroy>
