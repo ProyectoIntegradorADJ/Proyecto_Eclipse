@@ -5,13 +5,19 @@ import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 import dam.adjcars.control.AdjListener;
 
 import java.awt.Font;
 import javax.swing.JButton;
+import javax.swing.JScrollPane;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
 
 public class VPrincipal extends JFrame {
+	private static final long serialVersionUID = 1L;
+	
 	public static final int ANCHO = 500;
 	public static final int ALTO = 300;
 
@@ -19,6 +25,7 @@ public class VPrincipal extends JFrame {
 	public static final String BTN_CLIENTE = "Cliente";
 	private JButton btnEmpleado;
 	private JButton btnCliente;
+	private JScrollPane scrollPane;
 
 	public VPrincipal() {
 		super("Inicio - ADJ Cars Automotive");
@@ -28,22 +35,25 @@ public class VPrincipal extends JFrame {
 	private void initComponents() {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-		getContentPane().setLayout(null);
-
 		JLabel lblNewLabel = new JLabel("ADJ Cars Automotive");
-		lblNewLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 45));
 		lblNewLabel.setBounds(33, 32, 453, 100);
-		getContentPane().add(lblNewLabel);
+		lblNewLabel.setFont(new Font("Segoe UI Semibold", Font.PLAIN, 45));
 
 		btnEmpleado = new JButton(BTN_EMPLEADO);
-		btnEmpleado.setFont(new Font("Segoe UI", Font.PLAIN, 11));
 		btnEmpleado.setBounds(165, 135, 141, 23);
-		getContentPane().add(btnEmpleado);
+		btnEmpleado.setFont(new Font("Segoe UI", Font.PLAIN, 11));
 
 		btnCliente = new JButton(BTN_CLIENTE);
-		btnCliente.setFont(new Font("Segoe UI", Font.PLAIN, 11));
 		btnCliente.setBounds(165, 169, 141, 23);
+		btnCliente.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		
+		scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 179, 145, 74);
+		getContentPane().setLayout(null);
+		getContentPane().add(lblNewLabel);
+		getContentPane().add(btnEmpleado);
 		getContentPane().add(btnCliente);
+		getContentPane().add(scrollPane);
 
 		setSize(ANCHO, ALTO);
 		Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
@@ -58,5 +68,10 @@ public class VPrincipal extends JFrame {
 	public void setListener(AdjListener listener) {
 		btnEmpleado.addActionListener(listener);
 		btnCliente.addActionListener(listener);
+	}
+
+	public void cargarPanel(JPanel panel) {
+		src
+		
 	}
 }

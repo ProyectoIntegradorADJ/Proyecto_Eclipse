@@ -9,6 +9,8 @@ import javax.swing.JMenuItem;
 import dam.adjcars.db.AdjPersistencia;
 import dam.adjcars.model.Cliente;
 import dam.adjcars.model.Empleado;
+import dam.adjcars.model.Vehiculo;
+import dam.adjcars.view.PRegistrarVehiculo;
 import dam.adjcars.view.VAltaCliente;
 import dam.adjcars.view.VCliente;
 import dam.adjcars.view.VEmpleado;
@@ -25,15 +27,17 @@ public class AdjListener implements ActionListener {
 	private VAltaCliente vac;
 	private VCliente vc;
 	private AdjPersistencia model;
-
+	private PRegistrarVehiculo prv;
+	
 	public AdjListener(VPrincipal vp, VLoginEmpleado vle, VEmpleado ve, VLoginCliente vlc, VAltaCliente vac,
-			VCliente vc) {
+			VCliente vc, PRegistrarVehiculo prv) {
 		this.vp = vp;
 		this.vle = vle;
 		this.ve = ve;
 		this.vlc = vlc;
 		this.vac = vac;
 		this.vc = vc;
+		this.prv = prv;
 		model = new AdjPersistencia();
 	}
 
@@ -53,6 +57,21 @@ public class AdjListener implements ActionListener {
 			} else if (ev.getActionCommand().equalsIgnoreCase(VLoginCliente.BTN_ALTA_NUEVO_CLIENTE)) {
 				vlc.dispose();
 				vac.hacerVisible();
+			} else if (ev.getActionCommand().equalsIgnoreCase(PRegistrarVehiculo.BTN_GUARDAR_REG)) {
+				Vehiculo vehReg = prv.getDatos();
+				
+				if (vehReg != null) {
+					int veh = model.insertVehiculo(vehReg);
+					
+					if (veh == 1) {
+						prv.setVisibleBtnLimpiar(true);
+						prv.mostrarMsjInfo("Se ha registrado correctamente el vehículo introducido");
+					} else if (veh == -1) {
+						prv.mostrarMsjError("Ya existe un vehívulo con las características introducidas");
+					} else {
+						prv.mostrarMsjError("No se ha podido guardar los datos. Consulte con su administrador");
+					}
+				}
 			}
 		} else if (ev.getSource() instanceof JMenuItem) {
 			if (ev.getActionCommand().equalsIgnoreCase(VLoginEmpleado.MNTM_ATRAS_VLOGIN_EMPLEADO)) {
@@ -67,6 +86,8 @@ public class AdjListener implements ActionListener {
 			} else if (ev.getActionCommand().equalsIgnoreCase(VCliente.MNTM_SALIR_AREA_CLIENTE)) {
 				vc.dispose();
 				vlc.hacerVisible();
+			} else if (ev.getActionCommand().equalsIgnoreCase(VEmpleado.MNTM_REGISTRAR_VEHICULO){
+				
 			}
 
 		}

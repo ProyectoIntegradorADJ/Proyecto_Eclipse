@@ -12,14 +12,12 @@
     <fullyQualifiedTypeName name="java.awt.Dimension"/>
     <fullyQualifiedTypeName name="java.awt.Toolkit"/>
     <fullyQualifiedTypeName name="dam.adjcars.view.VAltaCliente"/>
-    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
     <fullyQualifiedTypeName name="javax.swing.JButton"/>
     <fullyQualifiedTypeName name="javax.swing.JMenuItem"/>
     <fullyQualifiedTypeName name="dam.adjcars.view.VPrincipal"/>
     <fullyQualifiedTypeName name="dam.adjcars.view.VLoginCliente"/>
     <fullyQualifiedTypeName name="dam.adjcars.view.VCliente"/>
     <fullyQualifiedTypeName name="dam.adjcars.view.VLoginEmpleado"/>
-    <fullyQualifiedTypeName name="dam.adjcars.view.VEmpleado"/>
     <fullyQualifiedTypeName name="dam.adjcars.db.AdjPersistencia"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
@@ -28,5 +26,10 @@
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="dam.adjcars.model.Empleado"/>
     <fullyQualifiedTypeName name="dam.adjcars.control.AdjListener"/>
+    <fullyQualifiedTypeName name="javax.swing.SpinnerNumberModel"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="dam.adjcars.model.Vehiculo"/>
+    <fullyQualifiedTypeName name="dam.adjcars.view.PRegistrarVehiculo"/>
+    <fullyQualifiedTypeName name="dam.adjcars.view.VEmpleado"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
 </qualifiedTypeNameHistroy>

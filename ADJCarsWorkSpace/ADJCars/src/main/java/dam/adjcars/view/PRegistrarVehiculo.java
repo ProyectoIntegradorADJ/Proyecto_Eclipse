@@ -10,9 +10,6 @@ import javax.swing.JComboBox;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 
-import com.dam.maven.GuiaMichelin.control.GMListener;
-import com.dam.maven.GuiaMichelin.model.Restaurante;
-
 import dam.adjcars.control.AdjListener;
 import dam.adjcars.model.Vehiculo;
 
@@ -35,10 +32,11 @@ public class PRegistrarVehiculo extends JPanel {
 	private JTextField txtMatriculaVehiculoReg;
 	private JTextField txtNumBastidorVehiculoReg;
 	private JTextField txtFechaFabVehiculoReg;
-	private JSpinner spinner;
+	private JSpinner spnPotencia;
 	private JButton btncancelarReg;
 	private JButton btnLimpiarDatosReg;
 	private JButton btnGuardarVehiculoReg;
+	
 	public PRegistrarVehiculo() {
 		initComponents();
 	}
@@ -106,11 +104,11 @@ public class PRegistrarVehiculo extends JPanel {
 		cmbTipoMotorVehiculoReg.setBounds(381, 129, 139, 22);
 		add(cmbTipoMotorVehiculoReg);
 		
-		spinner = new JSpinner();
-		spinner.setModel(new SpinnerNumberModel(65, 0, 720, 1));
-		spinner.setFont(new Font("Segoe UI", Font.PLAIN, 11));
-		spinner.setBounds(507, 89, 71, 20);
-		add(spinner);
+		spnPotencia = new JSpinner();
+		spnPotencia.setModel(new SpinnerNumberModel(65, 0, 720, 1));
+		spnPotencia.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		spnPotencia.setBounds(507, 89, 71, 20);
+		add(spnPotencia);
 		
 		txtColorVehiculoReg = new JTextField();
 		txtColorVehiculoReg.setBounds(99, 174, 130, 20);
@@ -156,7 +154,7 @@ public class PRegistrarVehiculo extends JPanel {
 	}
 	
 	public Vehiculo getDatos() {
-		Vehiculo vehIn = null;
+		Vehiculo vehReg = null;
 		
 		String marca = txtMarcaVehiculoReg.getText().trim();
 		
@@ -165,10 +163,40 @@ public class PRegistrarVehiculo extends JPanel {
 		} else {
 			String modelo = txtModeloVehiculoReg.getText().trim();
 			
-			int potencia = 
+			int potencia = (int) spnPotencia.getValue();
+			
+			if (potencia == 0) {
+				mostrarMsjError("Debe introducir la potencia");
+			} else {
+				String tipoVeh = cmbTiposVehiculosReg.getSelectedItem().toString();
+				
+				String tipoMotor = cmbTipoMotorVehiculoReg.getSelectedItem().toString();
+				
+				String color = txtColorVehiculoReg.getText().trim();
+				
+				String matricula = txtMatriculaVehiculoReg.getText().trim();
+				
+				if (matricula.isEmpty()) {
+					mostrarMsjError("Debe introducir la matrícula");
+				} else {
+					String numBast = txtNumBastidorVehiculoReg.getText().trim();
+					
+					if (numBast.isEmpty()) {
+						mostrarMsjError("Debe introducir el número del bastidor");
+					} else {
+						String fecha_Fab = txtFechaFabVehiculoReg.getText().trim();
+						if (fecha_Fab.isEmpty()) {
+							mostrarMsjError("Debe introducir fecha de fabricación");
+						} else {
+							vehReg = new Vehiculo(marca, modelo, potencia, tipoVeh, tipoMotor, color, matricula, numBast, fecha_Fab);
+						}
+					}
+					
+				}
+			}
 		}
 		
-		return vehIn;
+		return vehReg;
 	}
 
 	public void mostrarMsjError(String msj) {

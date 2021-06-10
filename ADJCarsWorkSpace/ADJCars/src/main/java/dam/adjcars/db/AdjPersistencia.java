@@ -7,6 +7,7 @@ import java.sql.SQLException;
 
 import dam.adjcars.model.Cliente;
 import dam.adjcars.model.Empleado;
+import dam.adjcars.model.Vehiculo;
 
 public class AdjPersistencia {
 	private AccesoDB adb;
@@ -113,5 +114,46 @@ public class AdjPersistencia {
 		}
 
 		return cliente;
+	}
+
+	public int insertVehiculo(Vehiculo vehReg) {
+		String query = "INSERT INTO CONC_VEHICULOS (MARCA, MODELO, POTENCIA, TIPO_VEH, TIPO_MOTOR, COLOR, MATRICULA, NUM_BASTIDOR, FECHA_FAB)" 
+				+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+				
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		int res = 0;
+		
+		try {
+			con = adb.getConexion();
+			pstmt = con.prepareStatement(query);
+			
+			pstmt.setString(1, vehReg.getMarca());
+			pstmt.setString(2, vehReg.getModelo());
+			pstmt.setInt(3, vehReg.getPotencia());
+			pstmt.setString(4, vehReg.getTipoVeh());
+			pstmt.setString(5, vehReg.getTipoMotor());
+			pstmt.setString(6, vehReg.getColor());
+			pstmt.setString(7, vehReg.getMatricula());
+			pstmt.setString(8, vehReg.getNumBastidor());
+			pstmt.setString(9, vehReg.getFecha_fab());
+					
+			res = pstmt.executeUpdate();
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			res = -1;
+			e.printStackTrace();
+		}finally {
+			try {
+				if (pstmt != null) pstmt.close();
+				if (con != null) con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return res;	
 	}
 }

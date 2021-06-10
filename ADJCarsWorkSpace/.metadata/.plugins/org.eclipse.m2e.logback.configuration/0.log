@@ -2246,3 +2246,131 @@
 2021-06-09 12:47:53,976 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\josea\Desktop\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
 2021-06-09 12:47:53,981 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-06-09 12:47:53,982 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\josea\Desktop\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 02:45:18,246 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-06-10 02:45:54,869 [Worker-20: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam:ADJCars:0.0.1-SNAPSHOT @ C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\pom.xml.
+2021-06-10 02:45:55,838 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:45:55,839 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 02:45:55,844 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:45:55,844 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 02:45:57,544 [Worker-10: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam:ADJCars:0.0.1-SNAPSHOT @ C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\pom.xml.
+2021-06-10 02:45:58,846 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:45:58,847 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 02:45:58,852 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:45:58,852 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 02:46:29,680 [Worker-19: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.dam.maven:GuiaMichelin:0.0.1-SNAPSHOT @ C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\GuiaMichelin\pom.xml.
+2021-06-10 02:46:29,820 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:46:29,820 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\GuiaMichelin\src\main\resources
+2021-06-10 02:46:29,824 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:46:29,824 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\GuiaMichelin\src\test\resources
+2021-06-10 02:46:31,293 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:46:31,293 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\GuiaMichelin\src\main\resources
+2021-06-10 02:46:31,295 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:46:31,296 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\GuiaMichelin\src\test\resources
+2021-06-10 02:48:01,125 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:48:01,126 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 02:48:01,128 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:48:01,129 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 02:48:02,204 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:48:02,205 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 02:48:02,207 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:48:02,209 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 02:48:51,648 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:48:51,648 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 02:48:51,650 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:48:51,651 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 02:49:08,635 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:49:08,636 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 02:49:08,639 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:49:08,639 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 02:50:03,471 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:50:03,472 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 02:50:03,474 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:50:03,475 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 02:58:09,712 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:58:09,712 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 02:58:09,716 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:58:09,717 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 02:58:39,071 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:58:39,071 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 02:58:39,076 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:58:39,076 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 02:58:44,637 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:58:44,638 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 02:58:44,639 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 02:58:44,640 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:01:23,771 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:01:23,772 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:01:23,774 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:01:23,774 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:02:48,966 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:02:48,967 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:02:48,971 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:02:48,971 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:03:19,252 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:03:19,252 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:03:19,254 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:03:19,254 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:17:16,053 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:17:16,054 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:17:16,056 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:17:16,056 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:17:24,350 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:17:24,351 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:17:24,356 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:17:24,357 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:17:33,499 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:17:33,500 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:17:33,504 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:17:33,505 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:17:40,430 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:17:40,431 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:17:40,434 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:17:40,435 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:18:41,127 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:18:41,129 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:18:41,133 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:18:41,133 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:19:55,168 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:19:55,169 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:19:55,173 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:19:55,173 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:20:42,497 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:20:42,498 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:20:42,502 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:20:42,502 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:20:50,443 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:20:50,443 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:20:50,445 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:20:50,446 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:21:17,477 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:21:17,478 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:21:17,480 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:21:17,480 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:28:35,253 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:28:35,254 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:28:35,255 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:28:35,255 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:30:24,640 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:30:24,640 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:30:24,641 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:30:24,642 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:31:00,569 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:31:00,569 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:31:00,571 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:31:00,573 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:31:37,355 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:31:37,356 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:31:37,358 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:31:37,358 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:38:45,189 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:38:45,190 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:38:45,192 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:38:45,193 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:41:09,026 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:41:09,027 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:41:09,028 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:41:09,029 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
+2021-06-10 03:44:54,273 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:44:54,275 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\main\resources
+2021-06-10 03:44:54,280 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-06-10 03:44:54,280 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Julia\Desktop\GITHUB_ProyectoIntegrador\Proyecto_Eclipse\ADJCarsWorkSpace\ADJCars\src\test\resources
