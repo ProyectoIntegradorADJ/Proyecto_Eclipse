@@ -12,7 +12,7 @@ public class Vehiculo {
 	private String numBastidor;
 	private String fecha_fab;
 
-	//Constructor
+	// Constructor
 	public Vehiculo(String marca, String modelo, int potencia, String tipoVeh, String tipoMotor, String color,
 			String matricula, String numBastidor, String fecha_fab) {
 		this.marca = marca;
@@ -25,8 +25,22 @@ public class Vehiculo {
 		this.numBastidor = numBastidor;
 		this.fecha_fab = fecha_fab;
 	}
+
+	// Panel Modificar
+	public Vehiculo(int potencia, String tipoMotor, String color, String matricula) {
+		this.potencia = potencia;
+		this.tipoMotor = tipoMotor;
+		this.color = color;
+		this.matricula = matricula;
+	}
 	
-	//Get y Set
+	public Vehiculo(int potencia, String tipoMotor, String color) {
+		this.potencia = potencia;
+		this.tipoMotor = tipoMotor;
+		this.color = color;
+	}
+
+	// Get y Set
 	public String getMarca() {
 		return marca;
 	}
@@ -98,5 +112,5 @@ public class Vehiculo {
 	public void setFecha_fab(String fecha_fab) {
 		this.fecha_fab = fecha_fab;
 	}
-	
+
 }

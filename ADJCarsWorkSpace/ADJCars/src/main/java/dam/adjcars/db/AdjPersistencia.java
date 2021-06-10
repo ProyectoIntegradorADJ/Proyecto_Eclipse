@@ -156,4 +156,84 @@ public class AdjPersistencia {
 		
 		return res;	
 	}
+
+	public Vehiculo selectMatVeh(String matricula) {
+		Vehiculo veh = null;
+		
+		String query = "SELECT MATRICULA, POTENCIA, TIPO_MOTOR, COLOR FROM CONC_VEHICULOS WHERE MATRICULA = ?";
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rslt = null;
+		
+		try {
+			con = adb.getConexion();
+			pstmt = con.prepareStatement(query);
+			pstmt.setString(1, matricula);
+			rslt = pstmt.executeQuery();
+			
+			String mat;
+			int pot;
+			String tMotor;
+			String color;
+			
+			while (rslt.next()) {
+				mat = rslt.getString(1);
+				pot = rslt.getInt(2);
+				tMotor = rslt.getString(3);
+				color = rslt.getString(4);
+				
+				veh = new Vehiculo(pot, tMotor, color, mat);
+			}
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (rslt != null) rslt.close();
+				if (pstmt != null) pstmt.close();
+				if (con != null) con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return veh;
+	}
+
+	public int updateVehiculo(Vehiculo vehiculo) {
+		String query = "UPDATE CONC_VEHICULOS SET POTENCIA = ?, TIPO_MOTOR = ?, COLOR = ? WHERE MATRICULA = ?";
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		int res = 0;
+		
+		try {
+			con = adb.getConexion();
+			pstmt = con.prepareStatement(query);
+			
+			pstmt.setInt(1, vehiculo.getPotencia());
+			pstmt.setString(2, vehiculo.getTipoMotor());
+			pstmt.setString(3, vehiculo.getColor());
+			pstmt.setString(4, vehiculo.getMatricula());
+			
+			res = pstmt.executeUpdate();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			res = -1;
+			e.printStackTrace();
+		}finally {
+			try {
+				if (pstmt != null) pstmt.close();
+				if (con != null) con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return res;
+	}
 }

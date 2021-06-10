@@ -14,6 +14,7 @@ import dam.adjcars.control.AdjListener;
 import dam.adjcars.model.Vehiculo;
 
 import javax.swing.JButton;
+import javax.swing.DefaultComboBoxModel;
 
 public class PRegistrarVehiculo extends JPanel {
 	private static final long serialVersionUID = 1L;
@@ -59,31 +60,31 @@ public class PRegistrarVehiculo extends JPanel {
 		add(lblModeloVehiculoReg);
 		
 		JLabel lblTipoVehiculoReg = new JLabel("Tipo de vehículo");
-		lblTipoVehiculoReg.setBounds(57, 133, 97, 14);
+		lblTipoVehiculoReg.setBounds(57, 141, 114, 14);
 		add(lblTipoVehiculoReg);
 		
 		JLabel lblColorVehiculoReg = new JLabel("Color");
-		lblColorVehiculoReg.setBounds(57, 177, 46, 14);
+		lblColorVehiculoReg.setBounds(57, 191, 46, 14);
 		add(lblColorVehiculoReg);
 		
 		JLabel lblMatriculaVehiculoReg = new JLabel("Matrícula");
-		lblMatriculaVehiculoReg.setBounds(247, 177, 63, 14);
+		lblMatriculaVehiculoReg.setBounds(247, 191, 63, 14);
 		add(lblMatriculaVehiculoReg);
 		
 		JLabel lblPotenciaVehiculoReg = new JLabel("Potencia");
-		lblPotenciaVehiculoReg.setBounds(451, 93, 46, 14);
+		lblPotenciaVehiculoReg.setBounds(451, 93, 69, 14);
 		add(lblPotenciaVehiculoReg);
 		
 		JLabel lblTipoMotorVehiculoReg = new JLabel("Tipo de motor");
-		lblTipoMotorVehiculoReg.setBounds(295, 133, 76, 14);
+		lblTipoMotorVehiculoReg.setBounds(331, 141, 102, 14);
 		add(lblTipoMotorVehiculoReg);
 		
 		JLabel lblNumBastidorVehiculoReg = new JLabel("Num. bastidor");
-		lblNumBastidorVehiculoReg.setBounds(57, 219, 138, 14);
+		lblNumBastidorVehiculoReg.setBounds(57, 245, 93, 14);
 		add(lblNumBastidorVehiculoReg);
 		
 		JLabel lblFechaFabVehiculoReg = new JLabel("Fecha de fabricación");
-		lblFechaFabVehiculoReg.setBounds(295, 219, 138, 14);
+		lblFechaFabVehiculoReg.setBounds(317, 245, 138, 14);
 		add(lblFechaFabVehiculoReg);
 		
 		txtMarcaVehiculoReg = new JTextField();
@@ -97,41 +98,43 @@ public class PRegistrarVehiculo extends JPanel {
 		txtModeloVehiculoReg.setColumns(10);
 		
 		cmbTiposVehiculosReg = new JComboBox<String>();
-		cmbTiposVehiculosReg.setBounds(147, 129, 138, 22);
+		cmbTiposVehiculosReg.setModel(new DefaultComboBoxModel(new String[] {"- ELEGIR -", "BERLINA", "COMPACTO", "DEPORTIVO", "FAMILIAR", "FAMILIAR DEPORTIVO", "HATCHBACK", "HATCHBACK DEPORTIVO", "SUV", "TODOTERRENO"}));
+		cmbTiposVehiculosReg.setBounds(172, 137, 138, 22);
 		add(cmbTiposVehiculosReg);
 		
 		cmbTipoMotorVehiculoReg = new JComboBox<String>();
-		cmbTipoMotorVehiculoReg.setBounds(381, 129, 139, 22);
+		cmbTipoMotorVehiculoReg.setModel(new DefaultComboBoxModel(new String[] {"- ELEGIR -", "ECOBOOST TDI", "TDI", "TFSI", "TGI", "TSI"}));
+		cmbTipoMotorVehiculoReg.setBounds(439, 137, 139, 22);
 		add(cmbTipoMotorVehiculoReg);
 		
 		spnPotencia = new JSpinner();
 		spnPotencia.setModel(new SpinnerNumberModel(65, 0, 720, 1));
 		spnPotencia.setFont(new Font("Segoe UI", Font.PLAIN, 11));
-		spnPotencia.setBounds(507, 89, 71, 20);
+		spnPotencia.setBounds(527, 89, 71, 20);
 		add(spnPotencia);
 		
 		txtColorVehiculoReg = new JTextField();
-		txtColorVehiculoReg.setBounds(99, 174, 130, 20);
+		txtColorVehiculoReg.setBounds(99, 188, 130, 20);
 		add(txtColorVehiculoReg);
 		txtColorVehiculoReg.setColumns(10);
 		
 		txtMatriculaVehiculoReg = new JTextField();
-		txtMatriculaVehiculoReg.setBounds(317, 174, 114, 20);
+		txtMatriculaVehiculoReg.setBounds(317, 188, 114, 20);
 		add(txtMatriculaVehiculoReg);
 		txtMatriculaVehiculoReg.setColumns(10);
 		
 		txtNumBastidorVehiculoReg = new JTextField();
-		txtNumBastidorVehiculoReg.setBounds(135, 216, 130, 20);
+		txtNumBastidorVehiculoReg.setBounds(155, 245, 130, 20);
 		add(txtNumBastidorVehiculoReg);
 		txtNumBastidorVehiculoReg.setColumns(10);
 		
 		txtFechaFabVehiculoReg = new JTextField();
-		txtFechaFabVehiculoReg.setBounds(419, 216, 159, 20);
+		txtFechaFabVehiculoReg.setBounds(460, 243, 138, 20);
 		add(txtFechaFabVehiculoReg);
 		txtFechaFabVehiculoReg.setColumns(10);
 		
 		btnGuardarVehiculoReg = new JButton(BTN_GUARDAR_REG);
-		btnGuardarVehiculoReg.setBounds(57, 259, 130, 23);
+		btnGuardarVehiculoReg.setBounds(180, 297, 170, 23);
 		add(btnGuardarVehiculoReg);
 		
 		btncancelarReg = new JButton(BTN_CANCELAR_REG);
@@ -139,7 +142,7 @@ public class PRegistrarVehiculo extends JPanel {
 		add(btncancelarReg);
 		
 		btnLimpiarDatosReg = new JButton(BTN_LIMPIAR_REG);
-		btnLimpiarDatosReg.setBounds(448, 259, 130, 23);
+		btnLimpiarDatosReg.setBounds(401, 297, 160, 23);
 		add(btnLimpiarDatosReg);
 	}
 
@@ -168,9 +171,9 @@ public class PRegistrarVehiculo extends JPanel {
 			if (potencia == 0) {
 				mostrarMsjError("Debe introducir la potencia");
 			} else {
-				String tipoVeh = cmbTiposVehiculosReg.getSelectedItem().toString();
+				String tipoVeh = (String) cmbTiposVehiculosReg.getSelectedItem();
 				
-				String tipoMotor = cmbTipoMotorVehiculoReg.getSelectedItem().toString();
+				String tipoMotor = (String) cmbTipoMotorVehiculoReg.getSelectedItem();
 				
 				String color = txtColorVehiculoReg.getText().trim();
 				
@@ -206,6 +209,19 @@ public class PRegistrarVehiculo extends JPanel {
 
 	public void mostrarMsjInfo(String msj) {
 		JOptionPane.showMessageDialog(this, msj, "Información de operación", JOptionPane.INFORMATION_MESSAGE);
+		
+	}
+
+	public void limpiarComponentes() {
+		txtMarcaVehiculoReg.setText("");
+		txtModeloVehiculoReg.setText("");
+		cmbTipoMotorVehiculoReg.setSelectedIndex(0);
+		cmbTiposVehiculosReg.setSelectedIndex(0);
+		txtColorVehiculoReg.setText("");
+		txtMatriculaVehiculoReg.setText("");
+		txtNumBastidorVehiculoReg.setText("");
+		txtFechaFabVehiculoReg.setText("");
+		spnPotencia.setValue(65);
 		
 	}
 

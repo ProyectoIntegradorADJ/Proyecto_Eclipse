@@ -19,17 +19,18 @@
     <fullyQualifiedTypeName name="dam.adjcars.view.VCliente"/>
     <fullyQualifiedTypeName name="dam.adjcars.view.VLoginEmpleado"/>
     <fullyQualifiedTypeName name="dam.adjcars.db.AdjPersistencia"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="dam.adjcars.model.Empleado"/>
-    <fullyQualifiedTypeName name="dam.adjcars.control.AdjListener"/>
     <fullyQualifiedTypeName name="javax.swing.SpinnerNumberModel"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="dam.adjcars.model.Vehiculo"/>
     <fullyQualifiedTypeName name="dam.adjcars.view.PRegistrarVehiculo"/>
     <fullyQualifiedTypeName name="dam.adjcars.view.VEmpleado"/>
     <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="dam.adjcars.control.AdjListener"/>
+    <fullyQualifiedTypeName name="dam.adjcars.view.PModificarVehiculo"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="dam.adjcars.model.Vehiculo"/>
 </qualifiedTypeNameHistroy>

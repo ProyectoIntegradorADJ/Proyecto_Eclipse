@@ -25,7 +25,6 @@ public class VPrincipal extends JFrame {
 	public static final String BTN_CLIENTE = "Cliente";
 	private JButton btnEmpleado;
 	private JButton btnCliente;
-	private JScrollPane scrollPane;
 
 	public VPrincipal() {
 		super("Inicio - ADJ Cars Automotive");
@@ -46,14 +45,10 @@ public class VPrincipal extends JFrame {
 		btnCliente = new JButton(BTN_CLIENTE);
 		btnCliente.setBounds(165, 169, 141, 23);
 		btnCliente.setFont(new Font("Segoe UI", Font.PLAIN, 11));
-		
-		scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 179, 145, 74);
 		getContentPane().setLayout(null);
 		getContentPane().add(lblNewLabel);
 		getContentPane().add(btnEmpleado);
 		getContentPane().add(btnCliente);
-		getContentPane().add(scrollPane);
 
 		setSize(ANCHO, ALTO);
 		Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
@@ -70,8 +65,4 @@ public class VPrincipal extends JFrame {
 		btnCliente.addActionListener(listener);
 	}
 
-	public void cargarPanel(JPanel panel) {
-		src
-		
-	}
 }

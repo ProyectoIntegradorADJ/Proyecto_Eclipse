@@ -3,6 +3,7 @@ package dam.ajdcars.main;
 import java.awt.EventQueue;
 
 import dam.adjcars.control.AdjListener;
+import dam.adjcars.view.PModificarVehiculo;
 import dam.adjcars.view.PRegistrarVehiculo;
 import dam.adjcars.view.VAltaCliente;
 import dam.adjcars.view.VCliente;
@@ -25,8 +26,9 @@ public class InicioAdjCars {
 				VEmpleado ve = new VEmpleado();
 				VCliente vc = new VCliente();
 				PRegistrarVehiculo prv = new PRegistrarVehiculo();
+				PModificarVehiculo pmv = new PModificarVehiculo();
 
-				AdjListener listener = new AdjListener(vp, vle, ve, vlc, vac, vc, prv);
+				AdjListener listener = new AdjListener(vp, vle, ve, vlc, vac, vc, prv, pmv);
 
 				vp.setListener(listener);
 				vle.setListener(listener);
@@ -35,6 +37,7 @@ public class InicioAdjCars {
 				ve.setListener(listener);
 				vc.setListener(listener);
 				prv.setListener(listener);
+				pmv.setListener(listener);
 
 				vp.hacerVisible();
 			}

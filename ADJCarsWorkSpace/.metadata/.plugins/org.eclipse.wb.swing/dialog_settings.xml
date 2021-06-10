@@ -3,7 +3,19 @@
 	<section name="org.eclipse.wb.internal.swing.model.property.editor.font.FontDialog">
 		<item key="x" value="664"/>
 		<item key="y" value="203"/>
-		<item key="width" value="591"/>
-		<item key="height" value="625"/>
+		<item key="width" value="599"/>
+		<item key="height" value="635"/>
+	</section>
+	<section name="org.eclipse.wb.internal.swing.model.property.editor.models.combo.ComboBoxModelDialog">
+		<item key="x" value="653"/>
+		<item key="y" value="285"/>
+		<item key="width" value="613"/>
+		<item key="height" value="460"/>
+	</section>
+	<section name="org.eclipse.wb.internal.swing.model.property.editor.models.spinner.SpinnerModelDialog">
+		<item key="x" value="610"/>
+		<item key="y" value="229"/>
+		<item key="width" value="700"/>
+		<item key="height" value="571"/>
 	</section>
 </section>
